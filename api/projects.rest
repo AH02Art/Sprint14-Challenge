@@ -6,7 +6,7 @@ POST http://localhost:5000/api/projects
 Content-Type: application/json
 
 {
-    "project_name": "Alex",
-    "project_description": "Alex",
+    "project_name": "Alex22",
+    "project_description": "Alex22",
     "project_completed": false
 }
