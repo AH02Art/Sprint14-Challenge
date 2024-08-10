@@ -19,7 +19,6 @@ router.post("/", function(request, response, next) {
     const project = request.body;
     Project.postProject(project)
         .then((p) => {
-            console.log("did something happen?? ===> ", p);
             response.status(201).json({
                 ...p,
                 project_completed: p.project_completed === 1

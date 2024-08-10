@@ -15,7 +15,7 @@ router.get("/", async function(request, response, next) {
                     project_name: project.project_name,
                     project_description: project.project_description
                 };
-            })
+            });
             response.status(200).json(stuff);
         })
         .catch(next);
@@ -25,7 +25,16 @@ router.get("/", async function(request, response, next) {
 });
 
 router.post("/", function(request, response, next) {
-    response.send("POST tasks here");
+    const task = request.body;
+    Task.postTask(task)
+        .then((data) => {
+            const stuff = {
+                ...data,
+                task_completed: data.task_completed === 1
+            }
+            response.status(201).json(stuff);
+        })
+        .catch(next);
 });
 
 router.use(function(error, request, response, next) {

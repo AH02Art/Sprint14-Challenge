@@ -3,12 +3,11 @@ GET http://localhost:5000/api/tasks
 ####
 
 POST http://localhost:5000/api/tasks
-# Content-Type: application/json
+Content-Type: application/json
 
-# {
-#     "task_description": "Alex",
-#     "task_notes": "Alex",
-#     "task_completed": false,
-#     "project_name": "Alex",
-#     "project_description": "Alex"
-# }
+{
+    "task_description": "Alex",
+    "task_notes": "Alex",
+    "task_completed": false,
+    "project_id": 1
+}
