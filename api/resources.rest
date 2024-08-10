@@ -3,12 +3,9 @@ GET http://localhost:5000/api/resources
 ####
 
 POST http://localhost:5000/api/resources
-# Content-Type: application/json
+Content-Type: application/json
 
-# {
-#     "task_description": "Alex",
-#     "task_notes": "Alex",
-#     "task_completed": false,
-#     "project_name": "Alex",
-#     "project_description": "Alex"
-# }
+{
+    "resource_name": "Hell Yeah Brother!!",
+    "resource_description": "also known as Jake"
+}

@@ -17,8 +17,6 @@ router.get("/", function(request, response, next) {
 
 router.post("/", function(request, response, next) {
     const project = request.body;
-    console.log("req.body ===> ", project);
-
     Project.postProject(project)
         .then((p) => {
             console.log("did something happen?? ===> ", p);
