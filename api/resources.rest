@@ -6,6 +6,6 @@ POST http://localhost:5000/api/resources
 Content-Type: application/json
 
 {
-    "resource_name": "Hell Yeah Brother!!",
-    "resource_description": "also known as Jake"
+    "resource_name": "Google",
+    "resource_description": "American multinational technology company, a subsidiary of Alphabet inc."
 }
